@@ -71,20 +71,20 @@ section p {
 }
 
 section#home {
-  background: url(/img/benjamin-sow-m3MWJTeKGBg-unsplash.jpg) no-repeat center
+  background: url(img/benjamin-sow-m3MWJTeKGBg-unsplash.jpg) no-repeat center
     center/cover;
 }
 section#about {
-  background: url(/img/marvin-van-beek-liuWJ2EHDnY-unsplash.jpg) no-repeat
+  background: url(img/marvin-van-beek-liuWJ2EHDnY-unsplash.jpg) no-repeat
     center center/cover;
 }
 section#projects {
   justify-content: flex-start;
-  background: url(/img/jr-korpa-Dt0Y6W_A10A-unsplash.jpg) no-repeat center
+  background: url(img/jr-korpa-Dt0Y6W_A10A-unsplash.jpg) no-repeat center
     center/cover;
 }
 section#contact {
-  background: url(/img/bruno-thethe-Evp4iNF3DHQ-unsplash.jpg) no-repeat center
+  background: url(img/bruno-thethe-Evp4iNF3DHQ-unsplash.jpg) no-repeat center
     center/cover;
 }
 
@@ -97,7 +97,7 @@ section#contact {
   .profile:hover {
     transform: rotateY(360deg);
   }
-  
+
   .slide-container {
     width: 300px;
     height: 300px;
