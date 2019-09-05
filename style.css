@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: visible;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+#projects h1 {
+  margin-top: 7%;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section#home {
+  background: url(/img/benjamin-sow-m3MWJTeKGBg-unsplash.jpg) no-repeat center
+    center/cover;
+}
+section#about {
+  background: url(/img/marvin-van-beek-liuWJ2EHDnY-unsplash.jpg) no-repeat
+    center center/cover;
+}
+section#projects {
+  justify-content: flex-start;
+  background: url(/img/jr-korpa-Dt0Y6W_A10A-unsplash.jpg) no-repeat center
+    center/cover;
+}
+section#contact {
+  background: url(/img/bruno-thethe-Evp4iNF3DHQ-unsplash.jpg) no-repeat center
+    center/cover;
+}
+
+@media screen and (min-width: 550px) {
+  .slide-container {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .image-container {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    animation-name: slider;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes slider {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: -300px;
+    }
+    75% {
+      left: -600px;
+    }
+    100% {
+      left: -900px;
+    }
+  }
+
+  .slider-image {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_container {
+    display: none;
+  }
+
+  .nav_container ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav_active {
+    display: flex;
+  }
+
+  .burger_container {
+    width: 100%;
+    height: 49px;
+  }
+
+  .burger {
+    padding: 10px;
+    width: 25px;
+    height: 29px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin-top: 5px;
+  }
+
+  .profile {
+    transition-property: transform;
+  }
+
+  .profile:hover {
+    transform: rotateY(360deg);
+  }
+
+  #projects {
+    overflow: hidden;
+
+  }
+
+  section#projects h1 {
+    margin-top: 12%;
+  }
+
+  .slide-container {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .image-container {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    animation-name: slider;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes slider {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: -300px;
+    }
+    75% {
+      left: -600px;
+    }
+    100% {
+      left: -900px;
+    }
+  }
+
+  .slider-image {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+}
