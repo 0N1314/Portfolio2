@@ -89,6 +89,15 @@ section#contact {
 }
 
 @media screen and (min-width: 550px) {
+  .profile {
+    transition-property: transform;
+    transition-duration: 2s;
+  }
+
+  .profile:hover {
+    transform: rotateY(360deg);
+  }
+  
   .slide-container {
     width: 300px;
     height: 300px;
@@ -179,6 +188,7 @@ section#contact {
 
   .profile {
     transition-property: transform;
+    transition-duration: 2s;
   }
 
   .profile:hover {
